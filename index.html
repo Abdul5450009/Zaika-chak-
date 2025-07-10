@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="logo">Zaika<span class="high">Chak</span></span>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home_main" id="home" data-aos="fade-down">
+            <section class="text-wrapper">
+                <h1 data-aos="fade-right">Zaika<span class="high">Chak</span></h1>
+                <p data-aos="fade-up">"Chill with desi vibe"</p>
+                <hr data-aos="fade-left">
+            </section>
+        </section>
+
+        <section class="about_us" id="about" data-aos="fade-up">
+            <section class="left" data-aos="fade-in">
+                <h1>About Us</h1>
+                <p>
+                    Welcome to ZaikaChak — where every bite tells a story of flavor, culture, and comfort. <br>
+                    We’re not just another food brand — we’re your go-to spot for that true desi vibe. From spicy street
+                    <br>
+                    snacks to soulful homemade-style meals, ZaikaChak brings you the authentic taste of home<br>
+
+                    Whether you’re chilling with friends, craving a quick bite, or just need that spice kick, we’ve got
+                    <br>
+                    your back. Every dish we serve is made with passion, purity, and zaika (flavor) that hits different.
+                    <br>
+
+                    ZaikaChak isn’t just food — it’s a mood, a vibe, and a celebration of desi roots with a modern <br>
+                    twist.
+
+                    Come for the flavor. Stay for the feeling. <br>
+                    #ChillWithDesiVibe
+                </p>
+            </section>
+            <section class="right" data-aos="zoom-in">
+                <video src="https://www.pexels.com/download/video/5528178/" autoplay loop muted playsinline
+                    preload="auto"></video>
+            </section>
+        </section>
+        <section class="contact_main" id="contact">
+            <section class="contact-card" data-aos="fade-down">
+            <section class="left-1">
+                <label class="input-1">
+                    📞 Our Phone number: +92-326-424-3320
+                </label>
+                <label class="input-2">
+                    <a href="https://mail.google.com/mail/?view=cm&to=mqtshahzad@gmail.com">📩 Our Email: mqtshahzad@gmail.com</a>
+                </label>
+                <label class="input-3">
+                    <a href="#">🌐 Our website</a>
+                </label>
+            </section>
+            <section class="right-1" data-aos="zoom-in">
+                <video src="https://www.pexels.com/download/video/8477339/" autoplay loop muted playsinline
+                    preload="auto"></video>
+            </section>
+            </section>
+        </section>
+    </main>
+    <script>
+        // Add hamburger dynamically
+        const header = document.querySelector("header");
+        const hamburger = document.createElement("div");
+        hamburger.textContent = "☰";
+        hamburger.className = "hamburger";
+        header.insertBefore(hamburger, header.children[1]);
+
+        const nav = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,      // Animation duration in ms
+            offset: 100,         // Offset (in px) from the original trigger point
+            delay: 100,          // Delay before animation starts
+            once: true           // Whether animation should happen only once
+        });
+    </script>
+</body>
+
+</html>
