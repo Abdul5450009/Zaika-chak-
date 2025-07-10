@@ -236,12 +236,13 @@ nav>ul>li>a:hover::after {
     letter-spacing: 1px;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.105);
-    background: rgba(255, 255, 255, 0.148);
+    background: rgba(255, 255, 255, 0.5);
     padding: 12px 20px;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
-.left-1>.input-3{
+
+.left-1>.input-3 {
     margin-top: 20px;
 }
 
@@ -268,6 +269,60 @@ nav>ul>li>a:hover::after {
     display: block;
     border-radius: 16px;
 }
+
+.menu-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff7f1;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+}
+
+.menu-card h3 {
+    font-size: 1.4rem;
+    color: #d14d3f;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.menu-card span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
 @media only screen and (max-width: 600px) {
     .home_main {
         height: 50vh;
@@ -329,21 +384,33 @@ nav>ul>li>a:hover::after {
         width: 300px;
         height: 250px;
     }
-    .contact-card{
+
+    .contact-card {
         justify-content: center;
     }
-    .left-1{
+
+    .left-1 {
         justify-content: center;
         align-items: center;
     }
+
     .left-1>.input-1,
     .left-1>.input-2>a,
-    .left-1>.input-3>a{
+    .left-1>.input-3>a {
         font-size: 0.6rem;
     }
-    .right-1{
+
+    .right-1 {
         width: 500px;
         height: 330px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card {
+        width: 90%;
     }
 }
 
@@ -351,10 +418,15 @@ nav>ul>li>a:hover::after {
     .right {
         margin: 0 auto;
     }
+
     .left-1>.input-1,
     .left-1>.input-2>a,
-    .left-1>.input-3>a{
+    .left-1>.input-3>a {
         font-size: 0.7rem;
+    }
+
+    .menu-grid {
+        justify-items: center;
     }
 }
 
@@ -362,9 +434,14 @@ nav>ul>li>a:hover::after {
     .right {
         margin: 0 auto;
     }
+
     .left-1>.input-1,
     .left-1>.input-2>a,
-    .left-1>.input-3>a{
+    .left-1>.input-3>a {
         font-size: 1rem;
+    }
+
+    .menu-grid {
+        justify-items: center;
     }
 }
